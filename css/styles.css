@@ -43,15 +43,15 @@ body {
     font-size: 18px;
     transition: .3s ease;
     font-weight: 500;
-   
+
 }
 
 .navbar-nav .nav-link:hover {
     color: #5941a4;
-    background-color:#ffb300;
+    background-color: #ffb300;
     transform: scale(1.1, 1.1);
-    
-    
+
+
 }
 
 .icons {
@@ -66,7 +66,7 @@ body {
 .icons a {
     color: #f8d174;
     margin-left: 30px;
-    
+
 }
 
 .main-section {
@@ -104,13 +104,15 @@ ul.menu>li {
 
 ul.menu>li>a {
     display: block;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     padding: 0 15px;
     line-height: 50px;
     color: #fff;
     transition: .6s;
+    /* margin-left: 5px; */
 }
+
 
 ul.menu li a:hover {
     color: #ffb300;
@@ -123,13 +125,15 @@ ul.menu ul {
     padding: 10px 5px;
     line-height: 20px;
     display: none;
-   
-    
+
+
 }
+
 ul.menu li:nth-child(4) {
     transition: .5s;
     width: 200px;
 }
+
 ul.menu ul li a {
     display: block;
     padding: 7px 12px;
@@ -139,87 +143,40 @@ ul.menu ul li a {
     margin-top: 4px;
     text-align: center;
 }
-ul.menu >li:hover ul {
+
+ul.menu>li:hover ul {
     display: block;
 
 }
 
 
 
-@media (max-width: 820px) {
-    .main img {
-        width: 200px;
-        height: 180px;
-    }
-
-    .links ul .btn {
-        background-color: #5941a4;
-        border-radius: 15px;
-        padding: 10px;
-        margin-top: 40px;
-    }
-}
-
-@media (max-width:720px) {
-    .links {
-        margin-top: 40px;
-    }
-
-    .links ul li {
-        display: inline-block;
-        font-size: 15px;
-    }
-}
-
-@media (max-width:690px) {
-    .links {
-        margin-top: 40px;
-    }
-
-    .links ul li {
-        display: inline-block;
-        font-size: 12px;
-    }
-}
-
-@media (max-width:550px) {
-    .links ul li {
-        position: absolute;
-        bottom: 10%;
-        right: 22%;
-
-    }
-
-    .links ul li {
-
-        display: flex;
-        flex-direction: column;
-        margin-top: 20px;
-        font-size: 30px;
-
-    }
-
-    .title h2 {
-        display: none;
-    }
-
-    .btn {
-        background-color: #5941a4;
-        border-radius: 15px;
-        padding: 10px;
-        position: absolute;
-        bottom: 20%;
-
-    }
-}
 
 .cards {
     width: 100%;
-    height: 100vh;
+    height: 130vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.title {
+    width: 500px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title h3 {
+    opacity: 0.7;
+}
+
+h2 {
+    margin-top: 30px;
+    opacity: 0.7;
 }
 
 .line {
@@ -234,6 +191,8 @@ ul.menu >li:hover ul {
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .card {
