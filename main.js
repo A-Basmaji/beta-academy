@@ -1,4 +1,5 @@
 const nav = document.querySelector('#main');
+const menu = document.querySelector('.hamburger');
 const topOfNav = nav.offsetTop;
 
 function fixNav() {
@@ -11,4 +12,9 @@ function fixNav() {
     }
 }
 
+
 window.addEventListener('scroll', fixNav);
+menu.addEventListener('click', () => {
+  console.log('test');
+  nav.classList.toggle('active-nav');
+})
