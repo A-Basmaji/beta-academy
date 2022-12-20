@@ -12,7 +12,6 @@ function fixNav() {
     }
 }
 
-
 window.addEventListener('scroll', fixNav);
 menu.addEventListener('click', () => {
   console.log('test');
