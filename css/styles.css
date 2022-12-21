@@ -15,10 +15,11 @@ a {
 
 body {
     width: 100%;
+    height: 550vh;
     background-image: url(../imgs/Frame\ 1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-   
+
 }
 
 .container {
@@ -243,7 +244,7 @@ nav {
 
 .cards {
     width: 100%;
-    height: 180vh;
+    height: 200vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -339,28 +340,38 @@ h2 {
 }
 
 /*  Start section of studying in Turkey*/
-.section-container {
+.section {
     width: 100%;
     height: 100vh;
+}
+
+.section-container {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 20px auto;
+    float: right;
 }
 
+
 .main-text h2 {
-    margin-right: 40px;
+    margin-right: 30px;
 }
 
 .main-text p {
     width: 80%;
-    font-size: 20px;
+    font-size: 23px;
     margin-right: 50px;
-    margin-top: 20px;
+    margin-top: 30px;
+
 }
 
 .main-image img {
-    margin-top: 30px;
-    width: 600px;
+    width: 700px;
+    height: 400px;
+    text-align: center;
+    margin-left: 20px;
 }
 
 .main-text ul {
@@ -398,10 +409,15 @@ h2 {
     background-color: #71b9d7;
 }
 
+.connact {
+    width: 100%;
+}
+
 .connact-container {
     width: 100%;
     height: 100vh;
     text-align: center;
+
 }
 
 .connact-text p {
@@ -410,7 +426,9 @@ h2 {
     line-height: 90px;
     opacity: 0.7;
 }
-
+.image img {
+    width: 600px;
+}
 .connact-text h4 {
     font-size: 25px;
     line-height: 90px;
@@ -431,6 +449,7 @@ h4.number {
 /* Start footer */
 footer {
     width: 100%;
+    /* height: 25vh; */
     text-align: center;
     background-color: #333333;
     padding-top: 40px;
@@ -548,8 +567,11 @@ nav a {
         background-image: url(../imgs/Frame\ 1.jpg);
         background-size: cover;
         background-repeat: no-repeat;
-        
+
     }
+
+    /* Start header */
+
 
     header {
         width: 100%;
@@ -635,9 +657,13 @@ nav a {
         padding: 10px 20px;
     }
 
+    /* End header */
+
+    /*  Start section of studying in Turkey */
+
     .section-container {
         width: 100%;
-        height: 200vh;
+        height: 300vh;
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -646,63 +672,66 @@ nav a {
 
     .main-text {
         width: 100%;
-        height: 200vh;
+        height: 100vh;
         position: relative;
     }
 
     .main-text h2 {
         position: absolute;
-        bottom: 30%;
-        right: 38%;
-        transform: translateX(50%);
-        font-size: 22px;
+        top: 10%;
+        left: 22%;
+        transform: translateX(-50%);
+        font-size: 23px;
+        width: 100%;
     }
 
     .main-text p {
-        width: 80%;
+        width: 85%;
         position: absolute;
-        bottom: -32%;
-        right: 41%;
-        transform: translateX(50%);
+        top: 55%;
+        left: 49%;
+        transform: translateX(-50%);
         text-align: center;
+        font-size: 16px;
     }
 
     .main-image {
         position: relative;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
     }
 
-    
-.main-image img {
-    margin-top: 30px;
-    width: 300px;
-}
 
+    .main-image img {
+        width: 350px;
+        height: 170px;
+        position: absolute;
+        bottom: 350px;
+        right: 50%;
+        transform: translateX(50%);
+
+
+    }
 
     .main-text ul {
         margin-right: 50px;
-        margin-top: 40px;
-        width: 350px;
+        margin-top: 10px;
+        width: 250px;
         display: flex;
         justify-content: space-between;
         position: absolute;
-        top: 131%;
+        top: 110%;
         left: 50%;
         transform: translateX(-50%);
     }
 
-    footer {
-        width: 100%;
-        text-align: center;
-        background-color: #333333;
-        padding-top: 40px;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        position: relative;
-        bottom: 0;
+    /*  End section of studying in Turkey */
 
-    }
 
+    /* Start connact section */
     .connact-container {
         position: relative;
         text-align: center;
@@ -712,29 +741,45 @@ nav a {
 
     .connact-text {
         position: absolute;
-        top: 0;
-        left: 0;
-
+        top: 110%;
+        left: 50%;
+        transform: translateX(-50%);
     }
-    .title h2 {
-        background-color: #5941a4;
-        padding: 20px;
-        border: 5px solid #ffc94b;
-        color: #ffc94b;
-        opacity: 1;
-        border-radius: 50px;
+
+    .connact-text p {
+        line-height: 50px;
+    }
+    .image {
+        position: relative;
         display: none;
     }
-    
-    .title p {
-        margin-top: 20px;
-        opacity: 0.7;
+
+    .image img {
+        width: 350px;
+        position: absolute;
+        top: 100%;
+        left: 0%;
+        transform: translateX(-50%);
+    }
+
+    /* End connact section */
+
+    /* Start footer */
+    footer {
+        width: 100%;
+        height: 25vh;
         text-align: center;
-        font-size: 30px;
-        display: none;
+        background-color: #333333;
+        padding-top: 40px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+       
+
     }
 
-    /* Resposive header */
+    /* End footer */
 
     /* End Resposive header */
 
@@ -872,18 +917,13 @@ ul .home:hover {
 
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
-    background-color: #ffc94b
+    background-color: #ffc94b;
 }
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
     display: block;
 }
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-/* .dropdown:hover .dropbtn {
-    background-color: #ffc94b;
-} */
 
 ul.dropdown {
     background-color: transparent;
