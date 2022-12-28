@@ -206,16 +206,8 @@ header {
     transform: scale(1);
 }
 
+
 nav {
-    background: transparent;
-    top: 0;
-    width: 100%;
-    transition: all 0.9s;
-    position: relative;
-    z-index: 1;
-}
-nav {
-    background: transparent;
     top: 0;
     width: 100%;
     transition: all 0.9s, background 1ms;
@@ -234,10 +226,7 @@ nav {
     top: 0;
 }
 
-.fixed-nav ul li:nth-child(9) {
-    /* display: none; */
 
-}
 
 nav ul {
     width: 100%;
@@ -262,7 +251,7 @@ nav ul li.link {
     background-color: white;
     padding: 0 5px;
     transition: .5s ease;
-    margin: 10px;
+    margin: 5px;
 
 
 }
@@ -295,7 +284,9 @@ li.Logo {
     background: transparent;
     transition: all 0.5s;
     height: 70px;
-    padding: 2px;
+    width:70px;
+    /* padding: 2px; */
+    margin-top: 35px;
 }
 
 .fixed-nav li.Logo {
@@ -312,7 +303,7 @@ nav a {
     color: #000;
     transition: all 0.2s;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 17px;
 }
 
 
@@ -536,19 +527,22 @@ h2 {
         display: block;
         cursor: pointer;
         position: absolute;
-        top: 20px;
+        top: 30px;
         right: 20px;
         z-index: 2;
     }
+    
 
     nav {
         background-color: white;
+        /* margin-bottom: 40px; */
     }
 
     nav ul {
         display: flex;
         align-items: center;
         justify-content: space-around;
+       
     }
 
     .hamburger .linee {
@@ -563,6 +557,7 @@ h2 {
     }
 
     .active-nav {
+        margin-bottom: 50px;
         background-color: white;
         color: #eeeeee;
     }

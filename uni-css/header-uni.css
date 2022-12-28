@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;600;800&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+Arabic:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Tajawal', sans-serif;
+}
+
+body {
+  margin: 0px;
+  font-family: 'segoe ui';
+}
+
+.nav {
+  height: 50px;
+  width: 100%;
+  background-color: #fff;
+  position: fixed;
+}
+
+.nav>.nav-header {
+  display: inline;
+  position: fixed;
+}
+
+.nav>.nav-header>.nav-title {
+  display: inline-block;
+ 
+}
+.nav>.nav-header>.nav-title img {
+  width: 90px;
+  padding-left: 10px;
+}
+
+.nav>.nav-btn {
+  display: none;
+}
+
+.nav>.nav-links {
+  display: inline;
+  float: right;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.nav>.nav-links>a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 700;
+  transition: .4s;
+}
+.nav>.nav-links>.a {
+  background-color: #5941a4;
+  color: #eee;
+  padding: 10px;
+}
+
+.nav>.nav-links>a:hover {
+  background-color: #fcd71f;
+  color: #5941a4;
+}
+
+.nav>#nav-check {
+  display: none;
+}
+
+@media (max-width:1300px) {
+  .nav>.nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+
+  .nav>.nav-btn>label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+
+  .nav>.nav-btn>label:hover,
+  .nav #nav-check:checked~.nav-btn>label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .nav>.nav-btn>label>span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #333;
+  }
+
+  .nav>.nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #fffefe;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+    text-align: center;
+  }
+
+  .nav>.nav-links>a {
+    display: block;
+    width: 100%;
+  }
+
+  .nav>#nav-check:not(:checked)~.nav-links {
+    height: 0px;
+  }
+
+  .nav>#nav-check:checked~.nav-links {
+    height: calc(100vh - 500px);
+    overflow-y: auto;
+  }
+}
+
+.dropbtn {
+  background-color: #fff;
+  color: #333;
+  padding: 14px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  text-align: center;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: rgba(0, 0, 0, 0.3);
+  
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #5941a4;
+  font-weight: 600;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #ffe149;
+  color: #5941a4;
+}
+.dropbtn i {
+  color: #5941a4;
+  margin-right: 5px;
+}
+
+
+.fa-graduation-cap {
+  margin-right: 5px;
+}
+
+.fa-bolt {
+  margin-right: 5px;
+}
+
+.fa-house {
+  margin-right: 5px;
+}
+
+.fa-circle-chevron-down {
+  margin-left: 5px;
+  color: #333;
+}
+.fa-magnifying-glass {
+  margin-right: 5px;
+}
+
+.fa-computer-mouse {
+  margin-right: 5px;
+}
+
+.fa-circle-question {
+  margin-right: 5px;
+}
+
+.fa-arrow-up-right-from-square {
+  margin-right: 5px;
+}
+
+.fa-arrow-pointer {
+  margin-right: 15px;
+}
+
+
+.fa-magnifying-glass {
+  margin-right: 10px;
+}
