@@ -115,7 +115,7 @@ body {
   }
 
   .nav>#nav-check:checked~.nav-links {
-    height: calc(100vh - 500px);
+    height: calc(100vh - 250px);
     overflow-y: auto;
   }
 }

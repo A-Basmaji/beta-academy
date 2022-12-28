@@ -48,7 +48,7 @@
 
     
 .main-image h2 {
-    font-size: 30px;
+    font-size: 20px;
     color: #fff;
     margin-top: 40px;
 }
@@ -85,7 +85,7 @@ footer {
     color: #eee;
 }
 
-@media only screen and (max-width: 945px) {
+@media (min-width:375px) and (max-width: 945px) {
    
 .footer-container p{
     color: #eee;
